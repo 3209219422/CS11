@@ -1,0 +1,112 @@
+C#企业级开发技术练习11答题卡
+
+班级：     
+姓名：     
+学号：     
+
+注：请将答案放置在序号下方。*/
+
+（一）using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        class Employee
+        {
+            public int? id { get; set; }
+            public decimal? pay { get; set; }
+            public String eName { get; set; }
+            public void Deconstruct(out int?a a,out string b,out decimal? c)
+            {
+                (a, b, c) = (null, null, null);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Employee[] emps =
+            {
+                new Employee{pay=9200,id=201010,eName="wang"},
+                new Employee{pay=9654.32m,id=201011,eName="zhang"}
+            };
+            foreach(var emp in emps)
+            {
+                var (employeeId, employeeName, employeePay) = emp;
+                Console.WriteLine($"{employeeName}({employeeId})工资:{employeePay}");
+            }
+        }
+    }
+}
+
+
+
+（二）using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        class Employee
+        {
+            public int? id { get; set; }
+            public decimal? pay { get; set; }
+            public String eName { get; set; }
+            public void Deconstruct(out int?a a,out string b,out decimal? c)
+            {
+                (a, b, c) = (null, null, null);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Employee[] emps =
+            {
+                new Employee{pay=9200,id=201010,eName="wang"},
+                new Employee{pay=9654.32m,id=201011,eName="zhang"}
+            };
+            foreach(var emp in emps)
+            {
+                var (employeeId, employeeName, employeePay) = emp;
+                Console.WriteLine($"{employeeName}({employeeId})工资:{employeePay}");
+            }
+        }
+    }
+}
+
+
+
+（三）using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        class Employee
+        {
+            public int? id { get; set; }
+            public decimal? pay { get; set; }
+            public String eName { get; set; }
+            public void Deconstruct(out int?a a,out string b,out decimal? c)
+            {
+                (a, b, c) = (null, null, null);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Employee[] emps =
+            {
+                new Employee{pay=9200,id=201010,eName="wang"},
+                new Employee{pay=9654.32m,id=201011,eName="zhang"}
+            };
+            foreach(var emp in emps)
+            {
+                var (employeeId, employeeName, employeePay) = emp;
+                Console.WriteLine($"{employeeName}({employeeId})工资:{employeePay}");
+            }
+        }
+    }
+}
+
+
+
+
+
